@@ -7,7 +7,7 @@ The goal is to enable the classifier to determine whether a prediction was corre
 
 The predicted SQL queries are taken from the repository: [Few-shot-NL2SQL-with-prompting](https://github.com/MohammadrezaPourreza/Few-shot-NL2SQL-with-prompting/blob/main/GPT4_results/GPT4_zero_shot.csv).
 
-Inspired by the paper [Spider: A Large-Scale Human-Labeled Dataset for Complex and Cross-Domain Semantic Parsing and Text-to-SQL Task](https://arxiv.org/pdf/1809.08887),  which classifies SQL queries by difficulty levels, this project uses the Spider dataset, [avalaible here](https://yale-lily.github.io/spider), along with spiders [Evaluator](https://github.com/taoyds/spider/blob/master/evaluation.py) to assess whether a prediction is correct or not.
+Inspired by the paper [Spider: A Large-Scale Human-Labeled Dataset for Complex and Cross-Domain Semantic Parsing and Text-to-SQL Task](https://arxiv.org/pdf/1809.08887), which introduces a large dataset for training and evaluating Text-to-SQL models, also classifying SQL queries by difficulty level, this project takes a different approach: this project uses the Spider dataset, [avalaible here](https://yale-lily.github.io/spider), along with spiders [Evaluator](https://github.com/taoyds/spider/blob/master/evaluation.py) to assess whether a prediction is correct or not based on linguistic features.
 
 A slightly modified version of the original [evaluation script](https://github.com/sinajaprlja/SPIDER/blob/main/evaluation.py) is used in this project. All changes are explicitly marked with comments and **do not alter** the core evaluation logic — they only provide clearer labeling of whether a prediction is considered correct or incorrect.
 
