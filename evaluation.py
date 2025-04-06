@@ -497,6 +497,10 @@ def evaluate(gold, predict, db_dir, etype, kmaps):
         for type_ in partial_types:
             scores[level]['partial'][type_] = {'acc': 0., 'rec': 0., 'f1': 0.,'acc_count':0,'rec_count':0}
 
+    # Sinja
+    # Match list for saving which sql was correct for better labeling.
+    matches: list = list()
+
     eval_err_num = 0
     for p, g in zip(plist, glist):
         p_str = p[0]
@@ -548,6 +552,8 @@ def evaluate(gold, predict, db_dir, etype, kmaps):
             if exec_score:
                 scores[hardness]['exec'] += 1.0
                 scores['all']['exec'] += 1.0
+                
+                
 
         if etype in ["all", "match"]:
             exact_score = evaluator.eval_exact_match(p_sql, g_sql)
@@ -556,6 +562,9 @@ def evaluate(gold, predict, db_dir, etype, kmaps):
                 print("{} pred: {}".format(hardness,p_str))
                 print("{} gold: {}".format(hardness,g_str))
                 print("")
+
+            matches.append([str(p)[1:-1], str(g)[1:-1], exact_score])
+            
             scores[hardness]['exact'] += exact_score
             scores['all']['exact'] += exact_score
             for type_ in partial_types:
@@ -609,6 +618,18 @@ def evaluate(gold, predict, db_dir, etype, kmaps):
                         scores[level]['partial'][type_]['rec'] + scores[level]['partial'][type_]['acc'])
 
     print_scores(scores, etype)
+
+
+    # Sinja
+    # format match output
+    def unpack_gold(string):
+        t = list(map(lambda x: x[::-1], string[::-1].split(",")))
+        db = t[0].replace("'", "").replace(" ", "")
+        g = ",".join(t[::-1][:-1])[1:-1]
+        return g, db
+
+    matches = list(map(lambda x: (x[0][1:-1], *unpack_gold(x[1]), x[2]), matches))
+    return matches
 
 
 def eval_exec_match(db, p_str, g_str, pred, gold):
