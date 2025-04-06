@@ -1,2 +1,7 @@
 __pycache__/
 spider_data/
+resources\en_50k.txt
+resources\en_full.txt
+resources\GPT4_few_shot.csv
+resources\test_gold_cleaned.sql
+check_test_json.ipynb
