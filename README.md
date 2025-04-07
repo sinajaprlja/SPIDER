@@ -43,13 +43,13 @@ To determine the most effective model, four classifiers were trained:
 
 # Results
 
-Without PCA, the best-performing classifier was Logistic Regression, achieving an accuracy of approximately 65%. <br>
-With PCA, the best result came from the Decision Tree Classifier using 11 principal components, reaching an accuracy of about 64%. <br>
+Without PCA, the best-performing classifier was Logistic Regression, achieving an accuracy of approximately 61.35%. <br>
+With PCA, the best result came from the Random Forest Classifier using 12 principal components, reaching an accuracy of about 61.84 %. <br>
 
 The most influential linguistic features included  ```num_tokens```, ```max_head_distance``` and ```max_subtree_size```. <br>
 A detailed visualization of feature importances is available in the notebook: [classifier.ipynb](https://github.com/sinajaprlja/SPIDER/blob/main/classifier.ipynb)
 
 Additionally, both classifiers were tested on the ```test.json``` file from the Spider dataset.
 
-Without PCA, an Accuracy of approximately 65% was reached. <br>
-With PCA, the Classifier performed slighty worse with an approximate acuracy of 53%.
+Without PCA, an Accuracy of approximately 65.30% was reached. <br>
+With PCA, the Classifier performed slighty worse with an approximate acuracy of 53.66%.
