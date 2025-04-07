@@ -1,3 +1,10 @@
+# This script contains modified code from [https://github.com/sinajaprlja/SPIDER/tree/main].
+# The original code was adjusted to meet [clearer labeling of whether a prediction is considered correct or incorrect.].
+# Original repository: [https://github.com/taoyds/spider/blob/master/evaluation.py]
+# Modifications were made by [Sinaja Prlja].
+
+
+
 ################################
 # val: number(float)/string(str)/sql(dict)
 # col_unit: (agg_id, col_id, isDistinct(bool))
