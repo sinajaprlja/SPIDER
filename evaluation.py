@@ -504,7 +504,7 @@ def evaluate(gold, predict, db_dir, etype, kmaps):
         for type_ in partial_types:
             scores[level]['partial'][type_] = {'acc': 0., 'rec': 0., 'f1': 0.,'acc_count':0,'rec_count':0}
 
-    # Sinja
+    # Sinaja
     # Match list for saving which sql was correct for better labeling.
     matches: list = list()
 
@@ -627,7 +627,7 @@ def evaluate(gold, predict, db_dir, etype, kmaps):
     print_scores(scores, etype)
 
 
-    # Sinja
+    # Sinaja
     # format match output
     def unpack_gold(string):
         t = list(map(lambda x: x[::-1], string[::-1].split(",")))
