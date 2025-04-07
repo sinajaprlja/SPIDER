@@ -13,7 +13,7 @@ The main findings are as follows:
 * Sentence length is consistent across difficulty levels, but more complex sentences tend to have higher syntactic distance.
 * No significant differences in POS or named entities across difficulty levels.
 * Easy questions have the highest proportion of wh-questions, with minimal difference across levels.
-* Syntactic complexity, indicated by max_subtree_size and max_head_distance, correlates with sentence complexity.
+* Syntactic complexity, indicated by ```max_subtree_size``` and ```max_head_distance```, correlates with sentence complexity.
 * Easier questions exhibit slightly more vocabulary variety, while harder questions have more repetitive or less diverse vocabulary.
 * Extra-difficulty questions contain the most frequent and rare words.
 
