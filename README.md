@@ -53,4 +53,4 @@ A detailed visualization of feature importances is available in the notebook: [c
 Additionally, both classifiers were tested on the ```test.json``` file from the Spider dataset.
 
 Without PCA, an Accuracy of approximately 65.30% was reached. <br>
-With PCA, the Classifier performed slighty worse with an approximate acuracy of 53.66%.
+With PCA, the Classifier performed worse with an approximate acuracy of 53.66%.
