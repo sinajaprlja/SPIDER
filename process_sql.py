@@ -1,3 +1,6 @@
+# This script is taken directly from [https://github.com/taoyds/spider/tree/master]
+# No modifications have been made to this script.
+
 ################################
 # Assumptions:
 #   1. sql is correct
