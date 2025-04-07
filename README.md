@@ -5,7 +5,7 @@ The goal is to enable the classifier to determine whether a prediction was corre
 
 # Spider Training Data Analysis
 
-Before starting with the Classifier, an analysis in [analysis.ipynb](https://github.com/sinajaprlja/SPIDER/blob/main/analysis.ipynb) on spiders train data was done based on linguistic features. <br>
+Before starting with the Classifier, an analysis in [analysis.ipynb](https://github.com/sinajaprlja/SPIDER/blob/main/analysis.ipynb) on spiders ```train.json``` data was done based on linguistic features. <br>
 The data was then grouped by difficulty level using spiders evaluation script.
 
 The main findings are as follows:
