@@ -27,6 +27,7 @@ Linguistic features extracted include general characteristics (e.g., number of t
 The predicted SQL queries are taken from the repository: [Few-shot-NL2SQL-with-prompting](https://github.com/MohammadrezaPourreza/Few-shot-NL2SQL-with-prompting/blob/main/GPT4_results/GPT4_zero_shot.csv).
 
 A slightly modified version of the original [evaluation script](https://github.com/sinajaprlja/SPIDER/blob/main/evaluation.py) is used in this project. All changes are explicitly marked with comments and **do not alter** the core evaluation logic — they only provide clearer labeling of whether a prediction is considered correct or incorrect.
+The ```process_sql.py``` is taken from the [Spider repository](https://github.com/taoyds/spider/blob/master/process_sql.py). It is used by the evaluator without any modifications.
 
 Frequent words were estimated using [the 50k frequent words data provided here.](https://github.com/hermitdave/FrequencyWords/blob/master/content/2018/en/en_50k.txt) <br>
 Rare words were determined from [the english full data provided here.](https://github.com/hermitdave/FrequencyWords/blob/master/content/2018/en/en_full.txt)
