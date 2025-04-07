@@ -15,7 +15,7 @@ The main findings are as follows:
 * Easy questions have the highest proportion of wh-questions, with minimal difference across levels.
 * Syntactic complexity, indicated by max_subtree_size and max_head_distance, correlates with sentence complexity.
 * Easier questions exhibit slightly more vocabulary variety, while harder questions have more repetitive or less diverse vocabulary.
-* Extra-difficulty questions contain the most frequent and rare words, and sentence lengths are similar across difficulty levels.
+* Extra-difficulty questions contain the most frequent and rare words.
 
 
 # Dataset and Preprocessing
